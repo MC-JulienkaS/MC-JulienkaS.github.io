@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <title>My first 'if' statement</title>
+    <link rel="stylesheet" href="math.css">
+
+    <!--- None blocking for Lighthouse report --->
+    <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none"
+        onload="if(media!='all')media='all'" />
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    </noscript>
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" media="none"
+        onload="if(media!='all')media='all'" />
+
+    <noscript>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    </noscript>
+
+</head>
+
+<body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="math.js"></script>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Slider, with If statement</span>
+            </div>
+        </header>
+        <div class="borderAndMore">
+            <main class="mdl-layout__content">
+                <h1>Slide the slide to the place of your choice and guess the number! enjoy!</h1>
+                <h3>(Refresh )</h3>
+                <div id="slider-value">?</div>
+                <!-- Slider with Starting Value -->
+                <!-- Note: I added and ID to this component, so I could reference it in code -->
+                <!-- Note: I also placed it inside a "label" for accessability -->
+                <label>
+                    Slider's Value
+                    <input id="slider" class="mdl-slider mdl-js-slider" type="range" min="1" max="10" value="2"
+                        tabindex="0" onchange="updatesSliderValue(this.value)" />
+                </label>
+                <!-- answer -->
+                <p></p>
+                <div id="answer"></div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--
+        <h1>My Personal Blog</h1>
+        <video width="30%" controls autoplay loop>
+            <source src="./video/SeaAndFish.mp4" type="video/mp4">
+            This browser does not support the video tag.
+        </video>
+        <br />
+        <p>Video from: <a href="https://pixabay.com/videos/search/">Pixabay</a></p>
+
+    <footer>
+        <p>Created by: <a href="https://tutorialspoint.com/">Tutorials Point</a></p>
+    </footer>
+    </div>
+    -->
