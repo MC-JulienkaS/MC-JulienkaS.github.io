@@ -27,29 +27,35 @@
 </head>
 
 <body>
+    <nav>
+        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="./contact.html"><i class="fa fa-phone"></i>Joke Generator</a>
+        <a href="./math.html"><i class="fa fa-console"></i>Randomizing game</a>
+    </nav>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="math.js"></script>
 
-        </header>
-        <div class="borderAndMore">
-            <main class="mdl-layout__content">
-                <h3 class="heading">Slide the slider to the place of your choice to guess the randomly chosen number! enjoy!</h3>
-                <h5>(Refresh to play again!)</h5>
-                <div id="slider-value">?</div>
-                <!-- Slider with Starting Value -->
-                <!-- Note: I added and ID to this component, so I could reference it in code -->
-                <!-- Note: I also placed it inside a "label" for accessability -->
-                <label>
-                    Slider's Value
-                    <input id="slider" class="mdl-slider mdl-js-slider" type="range" min="1" max="10" value="2"
-                        tabindex="0" onchange="updatesSliderValue(this.value)" />
-                </label>
-                <!-- answer -->
-                <p></p>
-                <div id="answer"></div>
+    </header>
+    <div class="borderAndMore">
+        <main class="mdl-layout__content">
+            <h3 class="heading">Slide the slider to the place of your choice to guess the randomly chosen number! enjoy!
+            </h3>
+            <h5>(Refresh to play again!)</h5>
+            <div id="slider-value">?</div>
+            <!-- Slider with Starting Value -->
+            <!-- Note: I added and ID to this component, so I could reference it in code -->
+            <!-- Note: I also placed it inside a "label" for accessability -->
+            <label>
+                Slider's Value
+                <input id="slider" class="mdl-slider mdl-js-slider" type="range" min="1" max="10" value="2" tabindex="0"
+                    onchange="updatesSliderValue(this.value)" />
+            </label>
+            <!-- answer -->
+            <p></p>
+            <div id="answer"></div>
 
-            </main>
-        </div>
+        </main>
+    </div>
     </div>
 </body>
 
