@@ -71,4 +71,5 @@ img {
     box-shadow: 0 5px 16px 2px #626292;
     padding: 10px;
     background-color: powderblue;
+    vertical-align: middle;
 }
