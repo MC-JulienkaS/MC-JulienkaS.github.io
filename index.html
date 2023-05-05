@@ -13,15 +13,11 @@
     <nav>
         <a href="./index.html"><i class="fa fa-home"></i> Home</a>
         <a href="./contact.html"><i class="fa fa-phone"></i>Joke Generator</a>
-        <a href="./math.html"><i class="fa fa-console"></i>Randomizing game</a>
+        <a href="./math.html"><i class="fa fa-gamepad"></i>Randomizing game</a>
     </nav>
 
     <div class="main-content" data-test="test">
         <h1 class="main-heading">Hi, I am Julienka</h1>
-
-        <p onclick="myFunction()" draggable="true" ondrag="myFunction()">CLICK ME</p>
-
-        <p onclick="changeName()" id="intro">CLICK ME</p>
 
         <p>I am 14 years old and am in Grade 9. I am a student learning to code
             <br>
@@ -52,62 +48,9 @@
 
             console.log("Sum of two nums is", sum)
 
-            function myFunction() {
-                var funnyEmoji = "😖"
-                console.log(funnyEmoji)
-
-                alert("hey pls dont click")
-            }
-
-            function changeName() {
-                document.getElementById("intro").innerHTML = "Hey its me, Julienka!"
-            }
-
             document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
 
-            function handleFormSubmit(event) {
-                event.preventDefault()
-
-                var name = document.getElementById("first-name").value
-                var email = document.getElementById("email").value
-                var birthday = document.getElementById("birthday").value
-
-                console.log(name)
-                console.log(email)
-                console.log(birthday)
-
-                document.getElementById("intro").innerHTML = name
-            }
-
         </script>
-
-        <br>
-        <br>
-
-        <h3>User Details Form</h3>
-        <form class="myForm" id="myForm">
-
-            <label for="first-name"> First Name </label>
-            <input type="text" name="first-name" id="first-name" placeholder="Enter first name here...">
-
-            <br>
-            <br>
-
-            <label for="email"> Email </label>
-            <input type="email" name="email" id="email" placeholder="Enter email here...">
-
-            <br>
-            <br>
-
-            <label for="birthday"> Birthday </label>
-            <input type="date" name="birthday" id="birthday" placeholder="Enter birthday here...">
-
-            <br>
-            <br>
-
-            <input type="submit" value="Submit Form">
-        </form>
-
     </div>
 </body>
 
