@@ -43,12 +43,17 @@ body {
     }
 }
 
+h1 {
+    color: rgb(50, 105, 207);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 p {
     color: black;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-top: 15pt;
+    padding-top: 15px;
 }
 
 img {
