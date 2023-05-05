@@ -43,7 +43,7 @@ body {
     }
 }
 
-h1 {
+.heading {
     color: rgb(50, 105, 207);
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
